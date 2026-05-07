@@ -800,41 +800,7 @@ section { padding: var(--section-py) 0; position: relative; }
   50%      { opacity: 1; transform: scaleY(1); }
 }
 
-/* ============= TICKER / MARQUEE ============= */
-.marquee {
-  background: var(--ink);
-  border-top: 1px solid var(--ink-line);
-  border-bottom: 1px solid var(--ink-line);
-  overflow: hidden;
-  padding: 22px 0;
-}
-.marquee-track {
-  display: flex;
-  gap: 56px;
-  white-space: nowrap;
-  animation: marqueeScroll 38s linear infinite;
-}
-.marquee-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 700;
-  color: rgba(255,255,255,0.5);
-  letter-spacing: -0.02em;
-  flex-shrink: 0;
-}
-.marquee-item .star {
-  color: var(--orange);
-  font-size: 18px;
-  animation: spin 14s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
+/* Marquee removed — ticker/scrolling band intentionally deleted */
 
 /* ============= STATS BAND ============= */
 .stats-band {
